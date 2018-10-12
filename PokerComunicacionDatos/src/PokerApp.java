@@ -9,36 +9,7 @@ public class PokerApp {
 		ArrayList<Card> deck = createDeck();
 		Scanner kb = new Scanner(System.in);
 
-		Collections.shuffle(deck);
-
-		double defaultMoney = 100000;
 		
-		Player player1 = new Player(deck.remove(0), deck.remove(0), defaultMoney);
-		Player player2 = new Player(deck.remove(0), deck.remove(0), defaultMoney);
-		displayCards(player1, "Player 1");
-		displayCards(player2, "Player 2");
-
-		String input = kb.next();
-		cleanConsole();
-
-		boolean initialBetTurn = true;
-		boolean bettingTurn;
-		while(true) {
-			
-			
-			bettingTurn = !initialBetTurn;
-	
-			double currentBet = initialBet(initialBetTurn, player1, player2);
-			
-			bettingTime(bettingTurn, currentBet, player1, player2);
-			
-			
-			
-			
-			
-			
-			
-		}
 
 
 	}
